@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import selenium
-import scrapy
 import requests
 
 TEST_URL = 'https://www.scrapingcourse.com/ecommerce/'
@@ -14,3 +13,4 @@ product_names = soup.find_all("h2")
 
 for product_name in product_names:
     print(product_name.text)
+
